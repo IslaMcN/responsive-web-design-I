@@ -286,11 +286,23 @@ body {
       flex-direction: row-reverse;
     }
     @media (max-width:425px){
-          .logo{
-              display:flex;
-              justify-content:center;
-              align-content: center;
-              border: 1px solid gray;
-          }
+        div.top{
+            display:flex;
+            flex-direction: column;
+        }
+        header nav{
+            display:flex;
+            flex-direction: column;
+            
+        }
+        nav a{
+            display:flex;
+            justify-content: center;
+            align-content: center;
+            border:1px solid rebeccapurple;
+        }
+        nav a:last-child{
+            margin-right: 50px;
+        }
     }
 
