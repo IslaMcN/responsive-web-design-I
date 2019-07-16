@@ -286,17 +286,23 @@ body {
       flex-direction: row-reverse;
     }
    @media screen and (max-width: 770px){
-     html, body{
-      width: 98%;
-      margin: 0 auto;
+     html{
+      width: 60%;
+      margin: auto 0;
       padding: 20px 1%;
-       border:1px solid rosybrown;
+      
        
+     }
+     body{
+      width: 58%;
+      margin: auto 0;
+      border:1px solid rosybrown;
+
      }
      header{
       width: 100vw;
-      margin: 0 auto;
       padding: 20px;
+      justify-content: space-between;
        border:1px solid royalblue;
      }
      .top{
@@ -338,7 +344,7 @@ body {
        text-align: center;
      }
      .hero{
-       display:hidden;
+       display:none !important;
        border:1px solid tomato;
      }
      .main-content{
@@ -346,7 +352,7 @@ body {
        border:1px solid turquoise;
      }
      .middle-img{
-       width: 100vw;
+       max-width: 60%;
      }
      .bottom-content{
        display:flex;
