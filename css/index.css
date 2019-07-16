@@ -311,9 +311,10 @@ body {
      }
      .logo{
       display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
       justify-content: center;
       border:1px solid tan;
+      
      }
      nav{
       /* margin-bottom: 20px; 
@@ -323,13 +324,14 @@ body {
        justify-content: space-around;
        align-content:center;
        width:100%;
+       padding-top:50px;
      }
      
 
      
      .cta{
       display:flex;
-      justify-content: space-between;
+      justify-content: center;
       align-content: center;
       margin: 0 auto;
       padding: 20px 1%;
@@ -339,6 +341,7 @@ body {
        display: flex;
        flex-direction: column;
        justify-content: center;
+       align-content: center;
      }
      h1{
        text-align: center;
@@ -351,14 +354,20 @@ body {
        display:flex;
        border:1px solid turquoise;
      }
+     .top-content{
+       display:flex;
+     }
      .middle-img{
-       max-width: 60%;
+       max-width: 100%;
      }
      .bottom-content{
        display:flex;
      }
      .contact{
-       margin: 0 auto;
+       display:flex;
+       justify-content: flex-start;
+       flex-wrap: wrap;
+      margin: 0 auto;
        width: 95vw;
        border: 1px solid yellow;
      }
@@ -367,37 +376,108 @@ body {
        border: 1px solid yellowgreen;
      }
    }
-    @media screen and (max-width:425px){
-      body{
+    @media screen and (max-width:380px){
+      html{
+        width: 60%;
+        margin: auto 0;
+        padding: 20px 1%;
+        
+         
+       }
+       body{
+        width: 58%;
+        margin: auto 0;
+        border:1px solid rosybrown;
+  
+       }
+       header{
+        width: 100vw;
+        padding: 20px;
+        justify-content: space-between;
+         border:1px solid royalblue;
+       }
+       .top{
+        width: 95vw; 
+        display:flex;
+       }
+       .logo{
+        display: flex;
+      flex-direction: column-reverse;
+        justify-content: center;
+        border:1px solid tan;
+        
+       }
+       nav{
+        /* margin-bottom: 20px; 
+        padding:10% 6% 5% 5%;
+         margin:0; */
+         display: flex;
+         justify-content: space-around;
+         align-content:center;
+         width:100%;
+         padding-top:50px;
+       }
+       
+  
+       
+       .cta{
+        display:flex;
+        justify-content: center;
+        align-content: center;
         margin: 0 auto;
-        width:100%;
-      } 
-      div.top{
-            display:flex;
-            flex-direction: column;
-        }
-        header nav{
-            display:flex;
-            flex-direction: column;
-            
-        }
-        nav a{
-            display:flex;
-            justify-content: center;
-            align-content: center;
-            border:1px solid rebeccapurple;
-            padding:0 100%;
-            margin: 0 100%;
-        }
-        nav a:last-child{
-            padding-right: 40px;
-        }
-        .logo{
-          display:flex;
-          justify-content: center;
-          align-content: center;
-          margin: 25%;
-      
-        }
-    }
+        padding: 20px 1%;
+         border:1px solid teal;
+       }
+       .cta-text{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-content: center;
+       }
+       h1{
+         text-align: center;
+       }
+       .hero{
+         display:none !important;
+         border:1px solid tomato;
+       }
+       .main-content{
+         display:flex;
+         flex-direction:column;
+         border:1px solid turquoise;
+       }
+       .top-content{
+         display:flex;
+       }
+       .middle-img{
+         max-width: 100%;
+       }
+       .bottom-content{
+         display:flex;
+         flex-direction: column;
+         width:100%
+       }
+       .text-content{
+         display:flex;
+         flex-direction: column;
+         width: 95%;
+         margin-top:2%;
+       }
+       p{
+         width: 770px;
+       }
+       .contact{
+         display:flex;
+         justify-content: flex-start;
+         flex-wrap: wrap;
+        margin: 0 auto;
+        margin-left:0;
+         width: 95vw;
+         border: 1px solid yellow;
+       }
+       footer{
+          text-align: center;
+         border: 1px solid yellowgreen;
+       }
+     }
 
