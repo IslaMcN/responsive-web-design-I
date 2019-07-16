@@ -285,8 +285,88 @@ body {
       display:flex;
       flex-direction: row-reverse;
     }
-    @media (max-width:425px){
-        div.top{
+   @media screen and (max-width: 770px){
+     html, body{
+      width: 98%;
+      margin: 0 auto;
+      padding: 20px 1%;
+       border:1px solid rosybrown;
+       
+     }
+     header{
+      width: 100vw;
+      margin: 0 auto;
+      padding: 20px;
+       border:1px solid royalblue;
+     }
+     .top{
+      width: 95vw; 
+      display:flex;
+     }
+     .logo{
+      display: flex;
+    flex-direction: column;
+      justify-content: center;
+      border:1px solid tan;
+     }
+     nav{
+      /* margin-bottom: 20px; 
+      padding:10% 6% 5% 5%;
+       margin:0; */
+       display: flex;
+       justify-content: space-around;
+       align-content:center;
+       width:100%;
+     }
+     
+
+     
+     .cta{
+      display:flex;
+      justify-content: space-between;
+      align-content: center;
+      margin: 0 auto;
+      padding: 20px 1%;
+       border:1px solid teal;
+     }
+     .cta-text{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+     }
+     h1{
+       text-align: center;
+     }
+     .hero{
+       display:hidden;
+       border:1px solid tomato;
+     }
+     .main-content{
+       display:flex;
+       border:1px solid turquoise;
+     }
+     .middle-img{
+       width: 100vw;
+     }
+     .bottom-content{
+       display:flex;
+     }
+     .contact{
+       margin: 0 auto;
+       width: 95vw;
+       border: 1px solid yellow;
+     }
+     footer{
+        text-align: center;
+       border: 1px solid yellowgreen;
+     }
+   }
+    @media screen and (max-width:425px){
+      body{
+        margin: 0 auto;
+        width:100%;
+      } 
+      div.top{
             display:flex;
             flex-direction: column;
         }
@@ -300,9 +380,18 @@ body {
             justify-content: center;
             align-content: center;
             border:1px solid rebeccapurple;
+            padding:0 100%;
+            margin: 0 100%;
         }
         nav a:last-child{
-            margin-right: 50px;
+            padding-right: 40px;
+        }
+        .logo{
+          display:flex;
+          justify-content: center;
+          align-content: center;
+          margin: 25%;
+      
         }
     }
 
