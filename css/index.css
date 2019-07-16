@@ -393,7 +393,8 @@ body {
        header{
         width: 100vw;
         padding: 20px;
-        justify-content: space-between;
+        display:flex;
+        flex-direction: column-reverse;
          border:1px solid royalblue;
        }
        .top{
@@ -405,6 +406,7 @@ body {
       flex-direction: column-reverse;
         justify-content: center;
         border:1px solid tan;
+        margin:0;
         
        }
        nav{
@@ -448,6 +450,8 @@ body {
        }
        .top-content{
          display:flex;
+         flex-direction:column;
+         width:100%;
        }
        .middle-img{
          max-width: 100%;
